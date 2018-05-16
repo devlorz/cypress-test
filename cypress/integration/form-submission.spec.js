@@ -22,7 +22,7 @@ describe('Form submission', () => {
     cy.get('.todo-list li').should('has.length', 5);
   });
 
-  it.only('Show an error message for a failed from submission', () => {
+  it('Show an error message for a failed from submission', () => {
     const newTodo = 'Test';
     cy.server();
     cy

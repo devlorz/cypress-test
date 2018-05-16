@@ -32,7 +32,7 @@ describe('Smoke Tests', () => {
       cy.wait('@load');
     });
 
-    it.only('Deletes todos', () => {
+    it('Deletes todos', () => {
       cy.route('DELETE', '/api/todos/*').as('delete');
       cy
         .get('.todo-list li')
